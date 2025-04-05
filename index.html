@@ -174,6 +174,13 @@
   </div>
 </section>
 
+<!-- System diagram image (same width as video) -->
+<div class="container is-max-desktop">
+  <figure class="image">
+    <img src="./static/images/RAIDER_intro_examples.png" alt="RAIDER system overview" style="width: 100%;">
+  </figure>
+</div>
+
 <!-- <section class="hero teaser">
   <div class="container is-max-desktop">
     <div class="hero-body">
@@ -263,7 +270,7 @@
           offer greater flexibility, they struggle to ground the extracted information to tangible constraints, limiting their 
           performance in embodied systems. To address this gap, we propose RAIDER, a novel agent integrating LLMs with grounded 
           tools for efficient and selective information gathering. RAIDER identifies and explains issues through a unique "Ground, 
-          Ask\&Answer, Issue" procedure, dynamically generating context-aware precondition questions and calling appropriate tools 
+          Ask&Answer, Issue" procedure, dynamically generating context-aware precondition questions and calling appropriate tools 
           to resolve them, all managed through a regulated flow incorporating self-correction mechanisms. Our results outperform 
           existing methods reliant on predefined action models, full scene descriptions or standalone trained models. Additionally, 
           the system's explanations substantially improve the success of recovery plans, which may involve human interactions where 
@@ -274,6 +281,36 @@
       </div>
     </div>
     <!--/ Abstract. -->
+
+    <!-- Handover detailed video. -->
+    <section class="section">
+      <div class="columns is-centered has-text-centered">
+        <div class="container is-max-desktop">
+          <h2 class="title is-4">Assistive Scenario: Detailed Demo in a Handover</h2>
+          <p class="content has-text-justified">
+            This video shows the details of the iterative flow between the LLM and the tools, regulated through the program flow manager, in a handover. Before executing the instructed action, the agent analyses the current context, decides what information is needed, and selects the appropriate tools to query. In this case, the issue identified is that the user is not looking at the robot, triggering a replan involving an interaction with the human to resolve the issue.
+          </p>
+          <video id="teaser" class="mt-4" autoplay muted loop controls playsinline width="100%">
+            <source src="./static/videos/RAIDER_handover_notlooking_slowdetailed.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+          </video>
+        </div>
+      </div>
+    </section>
+    <!--/ Handover detailed video. -->
+
+    <!-- Detailed examples. -->
+    <section class="section">
+      <div class="columns is-centered has-text-centered">
+        <div class="container is-max-desktop">
+          <h2 class="title is-4">Household Simulator: Detailed Examples</h2>
+          <figure class="image">
+            <img src="./static/images/RAIDER_detail_examples.png" alt="RAIDER detailed examples" style="width: 100%;">
+          </figure>
+        </div>
+      </div>
+    </section>
+    <!--/ Handover detailed video. -->
 
     <!-- Paper video. -->
     <!-- <div class="columns is-centered has-text-centered">
